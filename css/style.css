@@ -262,10 +262,12 @@ footer {
   }
   .showcase__img {
     background-color: url('../images/bg-intro-mobile.svg');
+    right: 0;
   }
   .showcase__img img {
     bottom: 0;
     margin: auto;
+    margin-right: 0;
     z-index: 100;
     padding-top: 0;
   }
