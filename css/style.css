@@ -261,7 +261,7 @@ footer {
     text-align: center;
   }
   .showcase__img {
-    background-color: url('../images/bg-intro-mobile.svg');
+    background-image: url('../images/bg-intro-mobile.svg');
     right: 0;
   }
   .showcase__img img {
