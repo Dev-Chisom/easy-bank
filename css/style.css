@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+:root {
+  --Dark-Blue: hsl(233, 26%, 24%);
+  --Lime-Green: hsl(136, 65%, 51%);
+  --Bright-Cyan: hsl(192, 70%, 51%);
+
+  --Grayish-Blue: hsl(233, 8%, 62%);
+  --Light-Grayish-Blue: hsl(220, 16%, 96%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--Dark-Blue);
+  overflow-x: hidden;
+}
+span {
+  display: block;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+img {
+  max-width: 100%;
+}
+nav {
+  background-color: var(--White);
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  z-index: 110;
+  transition: all 1s ease-in-out;
+}
+
+.nav__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  padding: 15px;
+}
+.nav__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  color: var(--Grayish-Blue);
+}
+.links a {
+  color: var(--Grayish-Blue);
+  padding: 10px;
+  margin: 0 5px;
+}
+.links a:hover {
+  border-bottom: 2px solid var(--Lime-Green);
+}
+.nav__toggle {
+  display: none;
+}
+/* Showcase */
+.showcase {
+  overflow: visible;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+.showcase__text {
+  margin: auto;
+}
+.showcase__text > *:first-child {
+  letter-spacing: 5px;
+  font-size: 2rem;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.showcase__img {
+  background-image: url('../images/bg-intro-desktop.svg');
+  position: relative;
+  right: -3rem;
+}
+.showcase__img img {
+  position: relative;
+  bottom: -9rem;
+  margin-right: 7rem;
+  z-index: 100;
+}
+
+.stats {
+  position: relative;
+}
+.stats__icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding-bottom: 5rem;
+}
+.stats__icons span {
+  font-size: 300;
+}
+.article__card-content {
+  width: 250px;
+  height: auto;
+  background: var(--White);
+  border-radius: 5px;
+}
+
+.article__cards {
+  /* width: 1100px; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  margin: auto;
+}
+.article__card-content img {
+  width: 250px;
+  object-fit: contain;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.article__card-content p a:hover {
+  color: var(--Lime-Green);
+}
+footer {
+  background-color: var(--Dark-Blue);
+  color: var(--White);
+}
+.footer__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.footer__content img {
+  color: var(--White);
+}
+.footer__socials img {
+  padding: 2px;
+}
+.footer__socials img:hover {
+  color: var(--Lime-Green);
+  cursor: pointer;
+}
+.footer__content a:hover {
+  color: var(--Lime-Green);
+  cursor: pointer;
+}
+.footer__content .copy {
+  justify-self: right;
+}
+.footer__content .content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.footer__content ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer__content a {
+  color: var(--White);
+}
+@media only screen and (max-width: 500px) and (max-width: 768px) {
+  nav {
+    padding-bottom: 0px;
+    overflow: visible;
+  }
+  .nav__container .btn {
+    display: none;
+  }
+  .nav__center {
+    display: block;
+    width: 100%;
+  }
+
+  .nav__toggle {
+    display: block;
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .effect {
+    transition: all 0.3s ease-in;
+  }
+
+  .nav__brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .nav__links {
+    height: 0;
+    overflow: hidden;
+  }
+
+  .nav__showLinks {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+  }
+
+  .nav__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+
+  .links li {
+    padding: 0 0 12px;
+    font-size: 23px;
+  }
+  .showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .showcase__text {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+  .showcase__img {
+    background-color: url('../images/bg-intro-mobile.svg');
+  }
+  .showcase__img img {
+    bottom: 0;
+    margin: auto;
+    z-index: 100;
+    padding-top: 0;
+  }
+
+  .stats__icons span {
+    font-size: 300;
+  }
+  .stats__content p,
+  .stats__content span {
+    text-align: center;
+  }
+  .article__cards,
+  .footer__content,
+  .footer__content .content,
+  .stats__icons {
+    grid-template-columns: 1fr;
+    margin: auto;
+    place-items: center;
+    text-align: center;
+  }
+  .article {
+    text-align: center;
+  }
+  .article__card-content {
+    margin-bottom: 3rem;
+  }
+  .footer__content .copy {
+    margin: auto;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  header {
+    overflow-x: hidden;
+  }
+  header .btn {
+    display: none;
+  }
+  nav {
+    background-color: var(--White);
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+    z-index: 110;
+    transition: all 1s ease-in-out;
+  }
+
+  .nav__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 15px;
+  }
+  .showcase__img img {
+    margin-right: 0;
+  }
+  .showcase__img {
+    right: 0;
+  }
+  .article__cards,
+  .stats__icons {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    margin: auto;
+    place-items: center;
+    text-align: center;
+  }
+  .article__card-content {
+    margin-bottom: 2rem;
+  }
+  .footer__content {
+    grid-template-columns: 1fr;
+  }
+  .footer__content {
+    padding: 2rem;
+    text-align: center;
+  }
+  .footer__content .copy {
+    margin: auto;
+  }
+}

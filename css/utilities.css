@@ -1,0 +1,116 @@
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  font-size: 14px;
+  background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+}
+.btn:hover {
+  transform: scale(0.9);
+}
+.bg-primary {
+  background-color: var(--Grayish-Blue);
+}
+.bg-secondary {
+  background-color: var(--Light-Grayish-Blue);
+}
+.bg-tertiary {
+  background-color: var(--Very-Light-Gray);
+}
+
+.lead {
+  font-size: 20px;
+  font-weight: 400;
+}
+.sm {
+  font-size: 1rem;
+}
+.md {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.lg {
+  font-size: 3rem;
+}
+.xl {
+  font-size: 4rem;
+}
+
+/* Margin */
+.my-1 {
+  margin: 1rem 0;
+}
+.my-2 {
+  margin: 1.5rem 0;
+}
+.my-3 {
+  margin: 2rem 0;
+}
+.my-4 {
+  margin: 3rem 0;
+}
+.my-5 {
+  margin: 4rem 0;
+}
+
+.m-1 {
+  margin: 1rem 0;
+}
+.m-2 {
+  margin: 1.5rem 0;
+}
+.m-3 {
+  margin: 2rem 0;
+}
+.m-4 {
+  margin: 3rem 0;
+}
+.m-5 {
+  margin: 4rem 0;
+}
+
+/* Padding */
+
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 1.5rem 0;
+}
+.py-3 {
+  padding: 2rem 0;
+}
+.py-4 {
+  padding: 3rem 0;
+}
+.py-5 {
+  padding: 4rem 0;
+}
+
+.p-0 {
+  padding: 0.7rem;
+}
+.p-1 {
+  padding: 1rem;
+}
+.p-2 {
+  padding: 1.5rem;
+}
+.p-3 {
+  padding: 2rem;
+}
+.p-4 {
+  padding: 3rem;
+}
+.p-5 {
+  padding: 4rem;
+}
